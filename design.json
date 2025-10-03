@@ -1,0 +1,366 @@
+{
+    "designSystem": {
+      "name": "Next.js Web Framework Design System",
+      "version": "1.0",
+      "description": "Design system extracted from Next.js official website showcasing dark theme with modern web development aesthetics"
+    },
+    "colorPalette": {
+      "primary": {
+        "background": "#000000",
+        "cardBackground": "linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)",
+        "cardBorder": "#333333",
+        "textPrimary": "#ffffff",
+        "textSecondary": "#a1a1a1",
+        "textMuted": "#666666"
+      },
+      "accent": {
+        "brand": "#ffffff",
+        "brandHover": "#f0f0f0",
+        "highlight": "#0070f3",
+        "success": "#00d632",
+        "warning": "#ff6b35"
+      },
+      "interactive": {
+        "buttonPrimary": "#ffffff",
+        "buttonPrimaryHover": "#e6e6e6",
+        "buttonSecondary": "rgba(255, 255, 255, 0.1)",
+        "buttonSecondaryHover": "rgba(255, 255, 255, 0.2)",
+        "linkDefault": "#ffffff",
+        "linkHover": "#a1a1a1"
+      },
+      "gradients": {
+        "cardGradient": "linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(15, 15, 15, 0.9) 100%)",
+        "hoverGradient": "linear-gradient(135deg, rgba(40, 40, 40, 0.8) 0%, rgba(25, 25, 25, 0.9) 100%)",
+        "backgroundPattern": "radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%)"
+      },
+      "shadows": {
+        "cardShadow": "0 8px 32px rgba(0, 0, 0, 0.3)",
+        "cardHoverShadow": "0 12px 48px rgba(0, 0, 0, 0.4)",
+        "buttonShadow": "0 2px 8px rgba(0, 0, 0, 0.2)",
+        "iconShadow": "0 2px 4px rgba(0, 0, 0, 0.1)"
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "mono": "'SF Mono', Monaco, 'Cascadia Code', monospace"
+      },
+      "scale": {
+        "hero": {
+          "fontSize": "4rem",
+          "fontWeight": 700,
+          "lineHeight": 1.1,
+          "color": "#ffffff",
+          "context": "Main page headings"
+        },
+        "heading1": {
+          "fontSize": "2.5rem",
+          "fontWeight": 600,
+          "lineHeight": 1.2,
+          "color": "#ffffff",
+          "context": "Section headings"
+        },
+        "heading2": {
+          "fontSize": "1.5rem",
+          "fontWeight": 600,
+          "lineHeight": 1.3,
+          "color": "#ffffff",
+          "context": "Card titles, component headings"
+        },
+        "body": {
+          "fontSize": "1rem",
+          "fontWeight": 400,
+          "lineHeight": 1.6,
+          "color": "#a1a1a1",
+          "context": "Card descriptions, general text"
+        },
+        "caption": {
+          "fontSize": "0.875rem",
+          "fontWeight": 400,
+          "lineHeight": 1.4,
+          "color": "#666666",
+          "context": "Secondary information, metadata"
+        },
+        "code": {
+          "fontSize": "0.875rem",
+          "fontWeight": 400,
+          "fontFamily": "mono",
+          "color": "#ffffff",
+          "backgroundColor": "rgba(255, 255, 255, 0.05)",
+          "context": "Code snippets, technical references"
+        }
+      }
+    },
+    "components": {
+      "cards": {
+        "featureCard": {
+          "background": "linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(15, 15, 15, 0.9) 100%)",
+          "border": "1px solid #333333",
+          "borderRadius": "12px",
+          "padding": "24px",
+          "boxShadow": "0 8px 32px rgba(0, 0, 0, 0.3)",
+          "transition": "all 0.3s ease",
+          "hover": {
+            "background": "linear-gradient(135deg, rgba(40, 40, 40, 0.8) 0%, rgba(25, 25, 25, 0.9) 100%)",
+            "boxShadow": "0 12px 48px rgba(0, 0, 0, 0.4)",
+            "transform": "translateY(-4px)"
+          },
+          "context": "Feature showcase cards with icons and descriptions"
+        },
+        "contentCard": {
+          "background": "rgba(26, 26, 26, 0.6)",
+          "border": "1px solid rgba(255, 255, 255, 0.1)",
+          "borderRadius": "8px",
+          "padding": "20px",
+          "backdropFilter": "blur(10px)",
+          "context": "Secondary content containers"
+        }
+      },
+      "buttons": {
+        "primary": {
+          "background": "#ffffff",
+          "color": "#000000",
+          "border": "none",
+          "borderRadius": "6px",
+          "padding": "12px 24px",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "boxShadow": "0 2px 8px rgba(0, 0, 0, 0.2)",
+          "transition": "all 0.2s ease",
+          "hover": {
+            "background": "#e6e6e6",
+            "transform": "translateY(-1px)",
+            "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.3)"
+          },
+          "context": "Primary call-to-action buttons"
+        },
+        "secondary": {
+          "background": "rgba(255, 255, 255, 0.1)",
+          "color": "#ffffff",
+          "border": "1px solid rgba(255, 255, 255, 0.2)",
+          "borderRadius": "6px",
+          "padding": "12px 24px",
+          "fontSize": "0.875rem",
+          "fontWeight": 500,
+          "transition": "all 0.2s ease",
+          "hover": {
+            "background": "rgba(255, 255, 255, 0.2)",
+            "borderColor": "rgba(255, 255, 255, 0.3)"
+          },
+          "context": "Secondary actions, alternative options"
+        }
+      },
+      "icons": {
+        "featureIcon": {
+          "size": "48px",
+          "color": "#ffffff",
+          "background": "none",
+          "filter": "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))",
+          "context": "Large icons in feature cards - NO gradients applied to icons"
+        },
+        "navigationIcon": {
+          "size": "24px",
+          "color": "#a1a1a1",
+          "background": "none",
+          "hover": {
+            "color": "#ffffff"
+          },
+          "context": "Header navigation and UI controls"
+        },
+        "actionIcon": {
+          "size": "20px",
+          "color": "#ffffff",
+          "background": "none",
+          "context": "Interactive elements within components"
+        }
+      },
+      "layout": {
+        "container": {
+          "maxWidth": "1200px",
+          "margin": "0 auto",
+          "padding": "0 24px",
+          "context": "Main content wrapper"
+        },
+        "grid": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(320px, 1fr))",
+          "gap": "24px",
+          "context": "Feature cards grid layout"
+        },
+        "section": {
+          "padding": "80px 0",
+          "context": "Major page sections"
+        }
+      },
+      "navigation": {
+        "header": {
+          "background": "rgba(0, 0, 0, 0.8)",
+          "backdropFilter": "blur(20px)",
+          "borderBottom": "1px solid rgba(255, 255, 255, 0.1)",
+          "padding": "16px 0",
+          "position": "sticky",
+          "top": 0,
+          "zIndex": 100,
+          "context": "Main site navigation"
+        },
+        "logo": {
+          "color": "#ffffff",
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
+          "textDecoration": "none",
+          "context": "Brand/logo text in navigation"
+        },
+        "navLink": {
+          "color": "#a1a1a1",
+          "fontSize": "0.875rem",
+          "fontWeight": 400,
+          "textDecoration": "none",
+          "padding": "8px 16px",
+          "borderRadius": "4px",
+          "transition": "all 0.2s ease",
+          "hover": {
+            "color": "#ffffff",
+            "background": "rgba(255, 255, 255, 0.1)"
+          },
+          "context": "Navigation menu items"
+        }
+      }
+    },
+    "visualEffects": {
+      "appliedTo": {
+        "cardGradients": {
+          "elements": ["featureCard", "contentCard"],
+          "effect": "Background gradients for depth and visual hierarchy",
+          "notAppliedTo": ["icons", "buttons", "text"]
+        },
+        "shadows": {
+          "elements": ["featureCard", "buttons", "header"],
+          "effect": "Box shadows for elevation and layering",
+          "notAppliedTo": ["icons", "text", "backgrounds"]
+        },
+        "backdropFilter": {
+          "elements": ["header", "contentCard"],
+          "effect": "Blur effect for glassmorphism aesthetic",
+          "notAppliedTo": ["featureCard", "buttons", "icons"]
+        },
+        "borderRadius": {
+          "elements": ["cards", "buttons", "inputs"],
+          "values": {
+            "small": "4px",
+            "medium": "8px",
+            "large": "12px"
+          },
+          "notAppliedTo": ["icons", "text", "layout containers"]
+        }
+      }
+    },
+    "interactionStates": {
+      "hover": {
+        "cards": {
+          "transform": "translateY(-4px)",
+          "backgroundChange": true,
+          "shadowIncrease": true,
+          "duration": "0.3s ease"
+        },
+        "buttons": {
+          "backgroundChange": true,
+          "transform": "translateY(-1px)",
+          "shadowIncrease": true,
+          "duration": "0.2s ease"
+        },
+        "links": {
+          "colorChange": true,
+          "backgroundChange": false,
+          "duration": "0.2s ease"
+        }
+      },
+      "focus": {
+        "buttons": {
+          "outline": "2px solid rgba(255, 255, 255, 0.5)",
+          "outlineOffset": "2px"
+        },
+        "links": {
+          "outline": "1px solid rgba(255, 255, 255, 0.3)",
+          "outlineOffset": "1px"
+        }
+      },
+      "active": {
+        "buttons": {
+          "transform": "translateY(0)",
+          "opacity": 0.9
+        }
+      }
+    },
+    "spacing": {
+      "scale": {
+        "xs": "4px",
+        "sm": "8px",
+        "md": "16px",
+        "lg": "24px",
+        "xl": "32px",
+        "2xl": "48px",
+        "3xl": "64px",
+        "4xl": "80px"
+      },
+      "contextual": {
+        "cardPadding": "24px",
+        "buttonPadding": "12px 24px",
+        "sectionPadding": "80px 0",
+        "containerPadding": "0 24px",
+        "gridGap": "24px"
+      }
+    },
+    "designPrinciples": {
+      "colorApplication": {
+        "rule1": "Card backgrounds use gradients - icons within cards use solid colors",
+        "rule2": "Button backgrounds can use gradients or solid colors - button text uses contrasting solid colors",
+        "rule3": "Text hierarchy uses different shades of white/gray - never gradients on text",
+        "rule4": "Icons are always solid colors with optional drop-shadows - never gradients"
+      },
+      "visualHierarchy": {
+        "rule1": "Larger shadows indicate higher elevation in the visual stack",
+        "rule2": "Brighter colors indicate higher importance or interactivity",
+        "rule3": "Gradients are reserved for backgrounds and containers, not content",
+        "rule4": "Hover states increase elevation and brightness consistently"
+      },
+      "consistency": {
+        "rule1": "All interactive elements have consistent transition timing (0.2s-0.3s)",
+        "rule2": "Border radius values follow the defined scale (4px, 8px, 12px)",
+        "rule3": "Color opacity values are standardized (0.1, 0.2, 0.3, 0.5, 0.8, 0.9)",
+        "rule4": "Shadow blur values follow progression (8px, 12px, 32px, 48px)"
+      }
+    },
+    "doNotRules": {
+      "colorMisapplication": [
+        "DO NOT apply card gradient backgrounds to icons",
+        "DO NOT use button colors for text elements",
+        "DO NOT apply gradients to text or typography",
+        "DO NOT use text colors for button backgrounds"
+      ],
+      "effectMisapplication": [
+        "DO NOT apply box-shadows to icons or text",
+        "DO NOT use backdrop-filter on solid elements",
+        "DO NOT apply card hover effects to static content",
+        "DO NOT use button transitions on non-interactive elements"
+      ],
+      "structuralMistakes": [
+        "DO NOT nest cards within cards",
+        "DO NOT apply container styles to content elements",
+        "DO NOT use navigation styles for general links",
+        "DO NOT mix different border-radius values within the same component"
+      ]
+    },
+    "responsiveConsiderations": {
+      "breakpoints": {
+        "mobile": "768px and below",
+        "tablet": "769px - 1024px",
+        "desktop": "1025px and above"
+      },
+      "adaptations": {
+        "typography": "Scale down font sizes by 10-20% on mobile",
+        "spacing": "Reduce padding and margins by 25% on mobile",
+        "grid": "Stack cards vertically on mobile, 2-column on tablet",
+        "buttons": "Increase touch target size to minimum 44px on mobile"
+      }
+    }
+  }
